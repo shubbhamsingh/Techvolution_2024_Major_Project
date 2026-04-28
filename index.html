@@ -27,14 +27,12 @@
 	  </nav>
 	</header>
 
-
-  </div>
-</section>
-<img src="" alt="">
 <section class="about dark-theme">
   <div class="about-content">
     <h2>About Techvolution 2024</h2>
-    <p>Focus on Malaysia's Tech Goals: The event was organized by SWAG Holdings Sdn Bhd and aimed to discuss Malaysia's progress in technology, digitalization of its economy, and its key technological missions. </p>Broad Range of Tech Topics: Discussions likely covered various trending areas in technology, including artificial intelligence, electric vehicles, and the creative economy<p>Collaboration for Innovation: Organizers emphasized the importance of collaboration between different industries to drive technological advancements in Malaysia</p>
+    <p>Focus on Malaysia's Tech Goals: The event was organized by SWAG Holdings Sdn Bhd and aimed to discuss Malaysia's progress in technology, digitalization of its economy, and its key technological missions. </p>
+    <p>Broad Range of Tech Topics: Discussions likely covered various trending areas in technology, including artificial intelligence, electric vehicles, and the creative economy</p>
+    <p>Collaboration for Innovation: Organizers emphasized the importance of collaboration between different industries to drive technological advancements in Malaysia</p>
     <a href="#menu" class="btn">Explore Our Menu</a>
   </div>
   <div class="about-image">
@@ -147,8 +145,10 @@
     }
 
     // Add event listener to the reservation form
-    const reservationForm = document.querySelector('.reservations .reservation-form');
-    reservationForm.addEventListener('submit', handleFormSubmit);
+    const reservationForm = document.querySelector('.reservations form');
+    if (reservationForm) {
+      reservationForm.addEventListener('submit', handleFormSubmit);
+    }
   
 </script>
 </body>
